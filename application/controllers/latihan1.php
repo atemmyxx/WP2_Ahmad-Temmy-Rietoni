@@ -5,6 +5,12 @@ class latihan1 extends CI_Controller
     {
         echo "selamat datang ... selamat belajar web programming";
     }
+public function penjumlahan($n1, $n2)
+{
+    $this -> load-> model('model_latihan1');
+    $hasil = $this-> model_latihan1-> jumlah($n1, $n2);
+    echo "hasil Penjumlahan dari" . $n1 ." + ". $n2 ." = "
+    .$hasil;
 }
 
-?>
+    }
