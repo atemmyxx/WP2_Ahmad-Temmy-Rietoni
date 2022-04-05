@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB II | merancang web sederhana dengan codeigniter</title>
-    <link rel="stylesheet"type="text/css"href="<?= base_url()?>assets/css/stylebuku.css">
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/stylebuku.css">
 </head>
 <body>
     <div id="wrapper">
@@ -26,6 +26,4 @@
             </nav>
             <div class="clear"></div>
         </header>
-    </div>
-</body>
-</html>
+ 
