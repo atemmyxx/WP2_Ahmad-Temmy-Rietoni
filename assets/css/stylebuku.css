@@ -10,7 +10,7 @@ body {
 	margin: 20px auto;
 }
 #wrapper header {
-	background: #232323;
+	background: linear-gradient(to right, #000046, #1cb5e0);
 	padding: 20px;
 }
 #wrapper header hgroup {
@@ -38,7 +38,7 @@ body {
 	clear: both;
 }
 footer {
-	background: #232323;
+	background: linear-gradient(to right, #000046, #1cb5e0);
 	padding: 20px;
 }
 footer a {
