@@ -48,7 +48,7 @@
 
             <tr>
                 <td colspan="3" align="center">
-                    <input type="submit" value="submit">
+                    <a href="<?= base_url('matakuliah') ?>">kembali</a>
                 </td>
             </tr>
         </table>   

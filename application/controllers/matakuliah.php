@@ -8,7 +8,7 @@ class matakuliah extends CI_Controller
 
     public function cetak()
     {
-     
+           
         $data = [
             'kode' => $this-> input->post('kode'),
             'nama' => $this-> input->post('nama'),
@@ -20,5 +20,7 @@ class matakuliah extends CI_Controller
         $this->load->view('viewdata', $data);
     }
 }
+
+
 
 
