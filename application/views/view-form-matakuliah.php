@@ -8,7 +8,7 @@
 </head>
 <body>
     <center>
-        <form action="<?= base_url('matakuliah/cetak');?>" method="post">
+        <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
         <table>
             <tr>
                 <th colspan="3">
@@ -20,16 +20,18 @@
                 <th>Kode MTK</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="kode" id="kode">
+                    <input type="text" name="kode" id="kode" placeholder="required">
                 </td>
+                <div class="col-sm-6 col-danger"> <?= form_error('kode'); ?></div>
             </tr>
 
             <tr>
                 <th>Nama MTK</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="nama" id="nama">
+                    <input type="text" name="nama" id="nama" placeholder="required">
                 </td>
+                <div class="col-sm-6 col-danger"> <?= form_error('nama'); ?></div>
             </tr>
 
             <tr>
@@ -48,7 +50,7 @@
 
             <tr>
                 <td colspan="3" align="center">
-                    <a href="<?= base_url('matakuliah') ?>">kembali</a>
+                    <input type="submit" value="submit">
                 </td>
             </tr>
         </table>   

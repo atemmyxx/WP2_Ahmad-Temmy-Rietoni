@@ -1,17 +1,17 @@
 <section>
-<link rel="stylesheet" type="text/css" href="http://localhost/pustaka-booking/assets/css/stylebuku.css">
- <h1><?php echo $judul ?></h1>
- <p align='justify'>Pada pengertian codeigniter di atas 
-tadi di jelaskan bahwa codeigniter menggunakan metode MVC. Apa itu
-MVC? Kita juga harus mengetahui apa itu MVC sebelum masuk dan lebih 
+    <h1><?= $judul ?></h1>
+    <p align='justify'>Pada pengertian codeigniter di atas 
+tadi di jelaskan bahwa codeigniter menggunakan metode MVC. Apa itu 
+45 MVC? Kita juga harus mengetahui apa itu MVC sebelum masuk dan lebih 
 jauh dalam belajar codeigniter.</p>
  <p>MVC adalah teknik atau konsep yang memisahkan 
 komponen utama menjadi tiga komponen yaitu model, view dan 
 controller.</p>
  
- <ol type="a">
- <li>Model</li>
-<p align='justify'>Model adalah kelas yang merepresentasikan atau 
+    <ol type=”a”</ol>
+    <li>Model</li>
+
+    <p align='justify'>Model adalah kelas yang merepresentasikan atau 
 memodelkan tipe data yang akan digunakan oleh aplikasi. Model juga 
 dapat didefinisakn sebagai bagian penanganan yang berhubungan dengan 
 pengolahan atau manipulasi database. Seperti misalnya mengambil data 
@@ -44,7 +44,5 @@ meneruskannya pada view untuk di tampilkan. Jadi jelas sudah dan
 sangat mudah dalam pengembangan aplikasi dengan cara mvc ini karena 
 web designer atau front-end developer tidak perlu lagi berhubungan 
 dengan controller, dia hanya perlu berhubungan dengan view untuk 
-mendesign tampilann aplikasi, karena back-end developer yang menangani bagian controller dan modelnya. Jadi pembagian tugas pun 
-menjadi mudah dan pengembangan aplikasi dapat di lakukan dengan
-cepat dan terstruktur.</p>
- </section>
+mendesign tampilann aplikasi, karena back-end developer yang
+</section>

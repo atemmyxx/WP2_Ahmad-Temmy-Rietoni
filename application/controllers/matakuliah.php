@@ -1,5 +1,5 @@
 <?php 
-class matakuliah extends CI_Controller
+class Matakuliah extends CI_Controller
 {
     public function index()
     {
@@ -9,9 +9,16 @@ class matakuliah extends CI_Controller
     public function cetak()
     {
      
-        $this->form_validation->set_rules('kode', 'kode matakuliah', 'required|min_length[3]', [ 'required' => 'kode matakuliah Harus diisi', 'min_length' => 'kode terlalu pendek']);
+        $this->form_validation->set_rules('kode', 'kode matakuliah', 'required|min_length[3]', 
+        [ 'required' => 'kode matakuliah Harus diisi', 
+            'numeric' => 'kode  harus berupa angka',
+            'min_length' => 'kode terlalu pendek'
+        ]);
 
-        $this->form_validation->set_rules('nama', 'nama matakuliah', 'required|min_length[3]', ['required' => 'nama matakuliah Harus diisi', 'min_length' => 'nama terlalu pendek']);
+        $this->form_validation->set_rules('nama', 'nama matakuliah', 'required|min_length[3]', 
+            ['required' => 'nama matakuliah Harus diisi', 
+            'min_length' => 'nama terlalu pendek'
+        ]);
         if ($this->form_validation->run() != true) {
             $this->load->view('view-form-matakuliah');
         }else {
@@ -28,7 +35,3 @@ class matakuliah extends CI_Controller
 }
 
 ?>
-
-
-
-
