@@ -23,6 +23,10 @@
 
         }
 
+        a {
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
@@ -79,7 +83,9 @@
             </li>
         </ul>
         <ul>
-            <li><button type="submit"><a href="<?= base_url('siswa');?>"></a>Back</button></li>
+            <li>
+                <button type="submit"><a href="<?= base_url('siswa') ?>">Back</a></button>
+            </li>
         </ul>
       <div class="nav"><h3>Terimakasih</h3></div>
     </form>

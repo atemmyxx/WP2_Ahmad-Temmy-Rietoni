@@ -10,14 +10,40 @@ class Siswa extends CI_Controller {
     }
     public function cetak()
 	{
-        $this->form_validation->set_rules('nama','Nama','required|min_length[5]|max_length[255]');
-		$this->form_validation->set_rules('nis','NIS','required');
-        $this->form_validation->set_rules('kelas','Kelas','required');
-        $this->form_validation->set_rules('tgllahir','Tanggal Lahir','required');
-        $this->form_validation->set_rules('tmplahir','Tempat Lahir','required');
-        $this->form_validation->set_rules('alamat','Alamat','required');
-		$this->form_validation->set_rules('jenis_kelamin','Jenis Kelamin','required');
-		$this->form_validation->set_rules('agama','Agama','required');
+        $this->form_validation->set_rules('nama','Nama','required|min_length[3]',
+        [
+            'required' => 'nama harus diisi!',       
+        ]);
+		$this->form_validation->set_rules('nis','NIS','required|min_length[8]', 
+        [
+            'required' => 'nis harus diisi!'
+        ]);
+        $this->form_validation->set_rules('kelas','Kelas','required|max_length[2]',
+        [
+            'required' => 'kelas harus diisi!'
+        ]);
+        $this->form_validation->set_rules('tgllahir','Tanggal Lahir','required',
+        [
+            'required' => 'tanggal lahir harus diisi!'
+        ]);
+        $this->form_validation->set_rules('tmplahir','Tempat Lahir','required|min_length[2]',
+        [
+            'required' => 'tempat lahir harus diisi!'
+        ]);
+        $this->form_validation->set_rules('alamat','Alamat','required|min_length[8]',
+        [
+            'required' => 'alamat harus diisi!'
+        ]);
+    
+
+		$this->form_validation->set_rules('jenis_kelamin','Jenis Kelamin','required',
+        [
+            'required' => 'jenis kelamin harus diisi!'
+        ]);
+		$this->form_validation->set_rules('agama','Agama','required',
+        [
+            'required' => 'agama harus diisi!'
+        ]);
 	
         if ($this->form_validation->run()==true)
         {
