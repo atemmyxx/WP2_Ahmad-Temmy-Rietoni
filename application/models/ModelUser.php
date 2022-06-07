@@ -1,5 +1,5 @@
-<?php 
-defined('BASEPATH') or exit ('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class ModelUser extends CI_Model
 {
@@ -29,11 +29,5 @@ class ModelUser extends CI_Model
         $this->db->from('user');
         $this->db->limit(10, 0);
         return $this->db->get();
-
-
     }
-        }
-    
-
-
-
+}
